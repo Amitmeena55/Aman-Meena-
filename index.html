@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Technical_01 - Amazon Reviews & Tech Tips</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-brand">
+                <h1>Technical_01</h1>
+            </div>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#home" class="nav-link active" onclick="showPage('home')">Home</a></li>
+                <li><a href="#about" class="nav-link" onclick="showPage('about')">About Maker</a></li>
+                <li><a href="#privacy" class="nav-link" onclick="showPage('privacy')">Privacy Policy</a></li>
+            </ul>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Home Page -->
+    <div id="home" class="page active">
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="hero-content animate-fade-in">
+                <h1 class="hero-title">Welcome to <span class="highlight">Technical_01</span></h1>
+                <p class="hero-subtitle">Amazon के सबसे अच्छे Products के Reviews और Tech Tips</p>
+                <p class="hero-description">हम आपको सर्वश्रेष्ठ Amazon products के honest reviews देते हैं और technology के बारे में useful जानकारी शेयर करते हैं।</p>
+                <div class="hero-buttons animate-slide-up" style="animation-delay: 0.3s">
+                    <a href="https://www.instagram.com/_technical_01?igsh=MTdydjJkbWl3Y3ppeg==" target="_blank" class="btn btn-primary">
+                        <i class="fab fa-instagram"></i> Instagram देखें
+                    </a>
+                    <a href="https://whatsapp.com/channel/0029VaDFCbF9hXFDBUx8fe3E" target="_blank" class="btn btn-secondary">
+                        <i class="fab fa-whatsapp"></i> WhatsApp Channel
+                    </a>
+                </div>
+            </div>
+            <div class="hero-image animate-slide-left">
+                <img src="attached_assets/IMG20240426181005_1766816120601.jpg" alt="Technical_01">
+            </div>
+        </section>
+
+        <!-- Stats Section -->
+        <section class="stats">
+            <div class="container">
+                <div class="stat-card animate-pop-in stat-bounce">
+                    <div class="stat-number">15K+</div>
+                    <div class="stat-label">Instagram Followers</div>
+                </div>
+                <div class="stat-card animate-pop-in stat-bounce" style="animation-delay: 0.1s">
+                    <div class="stat-number">200+</div>
+                    <div class="stat-label">Posts</div>
+                </div>
+                <div class="stat-card animate-pop-in stat-bounce" style="animation-delay: 0.2s">
+                    <div class="stat-number">0+</div>
+                    <div class="stat-label">Following</div>
+                </div>
+                <div class="stat-card animate-pop-in stat-bounce" style="animation-delay: 0.3s">
+                    <div class="stat-number">3K+</div>
+                    <div class="stat-label">WhatsApp Subscribers</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Brief Section -->
+        <section class="about-brief">
+            <div class="container">
+                <h2 class="section-title">क्या है Technical_01?</h2>
+                <div class="brief-content">
+                    <div class="brief-text animate-fade-in-left">
+                        <h3>Amazon के Best Products का Hub</h3>
+                        <p>Technical_01 आपका एक trusted platform है जहाँ आप सबसे authentic और detailed product reviews पा सकते हैं। हम Amazon पर हजारों products को carefully analyze करते हैं और सिर्फ सबसे अच्छे वाले को अपने followers के साथ share करते हैं।</p>
+                        
+                        <p><strong>हर review में आप पाते हैं:</strong></p>
+                        <ul>
+                            <li>✓ Honest और unbiased product reviews</li>
+                            <li>✓ Price, quality और value की detailed comparison</li>
+                            <li>✓ Real life testing और personal experience</li>
+                            <li>✓ Amazon के best deals और offers</li>
+                            <li>✓ Technology tips, tricks और life hacks</li>
+                            <li>✓ Product की pros और cons की detailed चर्चा</li>
+                            <li>✓ Similar products के बीच comparison</li>
+                        </ul>
+                        
+                        <p><strong>क्यों Technical_01 को चुनें?</strong></p>
+                        <p>क्योंकि हम सिर्फ products review नहीं करते - हम आपके investment को protect करते हैं। हर product को खरीदने से पहले हम personally test करते हैं, सभी features को समझते हैं, और फिर एक complete honest review देते हैं।</p>
+                    </div>
+                    <div class="brief-image animate-fade-in-right">
+                        <img src="attached_assets/anam_1766816120609.jpg" alt="Content">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Categories Section -->
+        <section class="categories">
+            <div class="container">
+                <h2 class="section-title">हमारे विषय (Categories)</h2>
+                <div class="category-grid">
+                    <div class="category-card animate-slide-up">
+                        <div class="category-icon"><i class="fas fa-mobile-alt"></i></div>
+                        <h3>Smartphones & Gadgets</h3>
+                        <p>Latest phones, earbuds, और charging devices</p>
+                    </div>
+                    <div class="category-card animate-slide-up" style="animation-delay: 0.1s">
+                        <div class="category-icon"><i class="fas fa-laptop"></i></div>
+                        <h3>Electronics</h3>
+                        <p>Laptops, tablets, और computer accessories</p>
+                    </div>
+                    <div class="category-card animate-slide-up" style="animation-delay: 0.2s">
+                        <div class="category-icon"><i class="fas fa-camera"></i></div>
+                        <h3>Photography</h3>
+                        <p>Cameras, lenses, और photography equipment</p>
+                    </div>
+                    <div class="category-card animate-slide-up" style="animation-delay: 0.3s">
+                        <div class="category-icon"><i class="fas fa-headphones"></i></div>
+                        <h3>Audio Products</h3>
+                        <p>Headphones, speakers, और sound systems</p>
+                    </div>
+                    <div class="category-card animate-slide-up" style="animation-delay: 0.4s">
+                        <div class="category-icon"><i class="fas fa-gamepad"></i></div>
+                        <h3>Gaming Gear</h3>
+                        <p>Gaming devices, keyboards, mice, और accessories</p>
+                    </div>
+                    <div class="category-card animate-slide-up" style="animation-delay: 0.5s">
+                        <div class="category-icon"><i class="fas fa-home"></i></div>
+                        <h3>Smart Home</h3>
+                        <p>Smart devices और home automation products</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="cta-section">
+            <div class="container">
+                <h2>अभी Follow करें और Latest Updates पाएं!</h2>
+                <div class="cta-buttons">
+                    <a href="https://www.instagram.com/_technical_01?igsh=MTdydjJkbWl3Y3ppeg==" target="_blank" class="btn btn-large">
+                        <i class="fab fa-instagram"></i> Instagram
+                    </a>
+                    <a href="https://whatsapp.com/channel/0029VaDFCbF9hXFDBUx8fe3E" target="_blank" class="btn btn-large">
+                        <i class="fab fa-whatsapp"></i> WhatsApp
+                    </a>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- About Page -->
+    <div id="about" class="page">
+        <section class="about-page">
+            <div class="container">
+                <h1 class="page-title animate-fade-in">About Me</h1>
+                
+                <div class="about-content">
+                    <div class="about-image animate-fade-in-left">
+                        <img src="attached_assets/aman_1766816120616.jpg" alt="Aman Meena" class="about-img-main">
+                    </div>
+                    <div class="about-text animate-fade-in-right">
+                        <h2>नमस्ते! 👋 मैं हूँ Aman Meena</h2>
+                        <p class="intro-text">मैं Technical_01 का creator, founder और passionate tech reviewer हूँ। मेरा मिशन है आपको सबसे अच्छे Amazon products के विषय में सच्चा और विस्तृत review देना। मैं एक dedicated student हूँ जो technology से बेहद प्रेरित है।</p>
+                        
+                        <h3>📋 मेरा विवरण:</h3>
+                        <div class="info-box">
+                            <p><strong>👤 नाम:</strong> Aman Meena</p>
+                            <p><strong>📍 शहर:</strong> Jaipur & Karauli, Rajasthan, India</p>
+                            <p><strong>📚 पेशा:</strong> Student & Professional Tech Reviewer</p>
+                            <p><strong>📱 Phone:</strong> 8696434884</p>
+                            <p><strong>✉️ Email:</strong> xemoh1950t@proton.me</p>
+                        </div>
+
+                        <h3>🎯 मेरा मिशन और दृष्टिकोण:</h3>
+                        <p>मैं Amazon पर हजारों products को देखता हूँ और सिर्फ सबसे बेहतरीन वाले को select करता हूँ। हर product को मैं personally test करता हूँ, उसके features को समझता हूँ, price को check करता हूँ और फिर एक honest review देता हूँ। मेरे लिए सबसे महत्वपूर्ण है कि मेरे followers को सही सलाह मिले और वे पैसा बर्बाद न करें।</p>
+
+                        <h3>💡 क्यों Technical_01?</h3>
+                        <p>Technology मेरा सबसे बड़ा passion है। मैं नई technologies सीखना, उन्हें समझना और उसके बारे में लोगों को बताना बहुत पसंद करता हूँ। Technical_01 सिर्फ एक channel नहीं है - यह एक community है जहाँ हम सभी एक दूसरे से सीखते हैं। यहाँ हर person की अपनी knowledge है और हम सभी को share करते हैं।</p>
+                        
+                        <h3>🏆 मेरी उपलब्धियाँ:</h3>
+                        <p>मैंने 15,000+ loyal followers को अपने Instagram पर gather किया है। मैंने 200+ detailed product reviews दिए हैं। 3,000+ लोग मेरे WhatsApp channel पर products के बारे में latest updates के लिए follow करते हैं। यह सब संभव हुआ मेरे viewers की trust और support से।</p>
+
+                        <h3>✨ हमारी Website की Animation Features:</h3>
+                        <div class="animation-features">
+                            <p><strong>🎬 Float Animation:</strong> Hero section में image ऊपर-नीचे floating रहती है - एक smooth और attractive effect देता है।</p>
+                            <p><strong>⬆️ Bounce Animation:</strong> Stats cards continuously उछलते रहते हैं जो engagement बढ़ाता है।</p>
+                            <p><strong>✨ Shimmer Effect:</strong> Hero section पर एक beautiful shimmer effect है जो light की तरह चलती है।</p>
+                            <p><strong>🔄 Rotate Animation:</strong> Category cards के background में subtle rotating gradient effect है।</p>
+                            <p><strong>💫 Glow Effect:</strong> Hover करने पर cards glowing effect देते हैं।</p>
+                            <p><strong>💥 Pulse Animation:</strong> Social media icons continuously pulse करते हैं।</p>
+                            <p><strong>🌊 Slide Animation:</strong> Elements smoothly slide in करते हैं जब page load होता है।</p>
+                            <p><strong>🎯 Ripple Effect:</strong> Buttons पर hover करने पर beautiful ripple wave effect होती है।</p>
+                        </div>
+
+                        <div class="social-follow">
+                            <h3>मुझे Follow करें:</h3>
+                            <div class="social-icons">
+                                <a href="https://www.instagram.com/_technical_01?igsh=MTdydjJkbWl3Y3ppeg==" target="_blank" class="social-icon" title="Instagram">
+                                    <i class="fab fa-instagram"></i>
+                                </a>
+                                <a href="https://x.com/_technical_01" target="_blank" class="social-icon" title="X (Twitter)">
+                                    <i class="fab fa-x-twitter"></i>
+                                </a>
+                                <a href="https://medium.com/@_technical_01" target="_blank" class="social-icon" title="Medium">
+                                    <i class="fab fa-medium"></i>
+                                </a>
+                                <a href="https://whatsapp.com/channel/0029VaDFCbF9hXFDBUx8fe3E" target="_blank" class="social-icon" title="WhatsApp">
+                                    <i class="fab fa-whatsapp"></i>
+                                </a>
+                                <a href="mailto:xemoh1950t@proton.me" class="social-icon" title="Email">
+                                    <i class="fas fa-envelope"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Gallery -->
+                <div class="gallery-section">
+                    <h2>Gallery</h2>
+                    <div class="gallery-grid">
+                        <div class="gallery-item animate-fade-in">
+                            <img src="attached_assets/IMG20240426181005_1766816120601.jpg" alt="Photo 1">
+                        </div>
+                        <div class="gallery-item animate-fade-in" style="animation-delay: 0.1s">
+                            <img src="attached_assets/anam_1766816120609.jpg" alt="Photo 2">
+                        </div>
+                        <div class="gallery-item animate-fade-in" style="animation-delay: 0.2s">
+                            <img src="attached_assets/aman_1766816120616.jpg" alt="Photo 3">
+                        </div>
+                        <div class="gallery-item animate-fade-in" style="animation-delay: 0.3s">
+                            <img src="attached_assets/ama_1766816120624.jpg" alt="Photo 4">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Privacy Policy Page -->
+    <div id="privacy" class="page">
+        <section class="privacy-page">
+            <div class="container">
+                <h1 class="page-title animate-fade-in">Privacy Policy</h1>
+                
+                <div class="privacy-content">
+                    <div class="policy-section">
+                        <h2>1. हम कौन हैं?</h2>
+                        <p>Technical_01 एक independent review channel है जो Amazon के products के बारे में honest reviews प्रदान करता है। हम किसी भी corporate या brand से affiliated नहीं हैं।</p>
+                    </div>
+
+                    <div class="policy-section">
+                        <h2>2. आपकी व्यक्तिगत जानकारी</h2>
+                        <p>हम आपकी व्यक्तिगत जानकारी को सुरक्षित रखते हैं। जब आप हमारे social media channels पर follow करते हैं या हमसे संपर्क करते हैं, तो:</p>
+                        <ul>
+                            <li>आपकी जानकारी केवल communication के लिए उपयोग की जाती है</li>
+                            <li>हम आपकी जानकारी को किसी third party को बेचते नहीं हैं</li>
+                            <li>आपकी privacy हमारे लिए सर्वोच्च प्राथमिकता है</li>
+                        </ul>
+                    </div>
+
+                    <div class="policy-section">
+                        <h2>3. Cookies और Tracking</h2>
+                        <p>हमारी website Cookies का उपयोग करती है आपके browsing experience को बेहतर बनाने के लिए। आप अपने browser settings से Cookies को disable कर सकते हैं।</p>
+                    </div>
+
+                    <div class="policy-section">
+                        <h2>4. Affiliate Links</h2>
+                        <p>कुछ links Amazon Affiliate links हैं। जब आप इन links से कोई product खरीदते हैं, तो हमें एक छोटा commission मिलता है। इससे हमें better content बनाने में मदद मिलती है।</p>
+                    </div>
+
+                    <div class="policy-section">
+                        <h2>5. आपके अधिकार</h2>
+                        <p>आपको निम्नलिखित अधिकार हैं:</p>
+                        <ul>
+                            <li>हमसे अपनी जानकारी मांग सकते हैं</li>
+                            <li>अपनी जानकारी को delete करने के लिए कह सकते हैं</li>
+                            <li>किसी भी time हमारे newsletter से unsubscribe कर सकते हैं</li>
+                        </ul>
+                    </div>
+
+                    <div class="policy-section">
+                        <h2>6. संपर्क करें</h2>
+                        <p>अगर आपको कोई प्रश्न है या privacy से संबंधित कोई समस्या है, तो कृपया हमसे संपर्क करें:</p>
+                        <ul>
+                            <li>Email: xemoh1950t@proton.me</li>
+                            <li>Phone: 8696434884</li>
+                            <li>Instagram: <a href="https://www.instagram.com/_technical_01?igsh=MTdydjJkbWl3Y3ppeg==" target="_blank">@_technical_01</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="policy-section">
+                        <h2>7. Policy परिवर्तन</h2>
+                        <p>हम समय-समय पर इस Privacy Policy को update कर सकते हैं। महत्वपूर्ण बदलावों के लिए हम आपको notify करेंगे।</p>
+                    </div>
+
+                    <div class="policy-section">
+                        <h2>8. Disclaimer</h2>
+                        <p>हम अपने सभी reviews और information के accuracy के लिए अपनी best effort करते हैं। लेकिन हम कोई गारंटी नहीं देते। यह एक personal review channel है।</p>
+                    </div>
+
+                    <div class="policy-last-updated">
+                        <p><strong>Last Updated:</strong> December 27, 2025</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Technical_01</h3>
+                    <p>Amazon के best products के reviews और tech tips का hub</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#home" onclick="showPage('home')">Home</a></li>
+                        <li><a href="#about" onclick="showPage('about')">About Maker</a></li>
+                        <li><a href="#privacy" onclick="showPage('privacy')">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Follow Us</h3>
+                    <div class="footer-social">
+                        <a href="https://www.instagram.com/_technical_01?igsh=MTdydjJkbWl3Y3ppeg==" target="_blank">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="https://whatsapp.com/channel/0029VaDFCbF9hXFDBUx8fe3E" target="_blank">
+                            <i class="fab fa-whatsapp"></i>
+                        </a>
+                        <a href="mailto:xemoh1950t@proton.me">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Technical_01. All Rights Reserved. Created by Aman Meena</p>
+                <p>Disclaimer: हम Amazon Affiliate हैं। हमारी कुछ links से हमें commission मिलता है।</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
